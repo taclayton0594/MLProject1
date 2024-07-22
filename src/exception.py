@@ -1,5 +1,6 @@
 import sys # functions and variables for manipulating different parts of Python runtime env
 import logging
+from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()
