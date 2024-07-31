@@ -11,6 +11,9 @@ from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object
 
+'''
+dataclasses are generally used to contain data without having to define class specific function like '__init__' or '__repr__'
+'''
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path = os.path.join('artifacts',"preprocessor.pkl")
